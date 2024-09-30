@@ -1,0 +1,608 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="global.css" />
+    <title>Star City Plumbing</title>
+  </head>
+  <body>
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <header id="cs-navigation">
+      <div class="cs-container">
+        <!--Nav Logo-->
+        <a href="" class="cs-logo" aria-label="back to home">
+          <img
+            src="assets/starcityLogo2.png"
+            alt="logo"
+            width="210"
+            height="29"
+            aria-hidden="true"
+            decoding="async"
+          />
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+          <!--Mobile Nav Toggle-->
+          <button class="cs-toggle" aria-label="mobile menu toggle">
+            <div class="cs-box" aria-hidden="true">
+              <span class="cs-line cs-line1" aria-hidden="true"></span>
+              <span class="cs-line cs-line2" aria-hidden="true"></span>
+              <span class="cs-line cs-line3" aria-hidden="true"></span>
+            </div>
+          </button>
+          <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+          <div class="cs-ul-wrapper">
+            <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+              <li class="cs-li">
+                <a href="" class="cs-li-link cs-active"> Home </a>
+              </li>
+
+              <li class="cs-li">
+                <a href="" class="cs-li-link"> Services </a>
+              </li>
+              <li class="cs-li">
+                <a href="" class="cs-li-link"> About Us </a>
+              </li>
+              <li class="cs-li">
+                <a href="" class="cs-li-link"> FAQ </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <a href="" class="cs-button-solid cs-nav-button">Contact Us</a>
+        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+                <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+                <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+            </button> -->
+      </div>
+    </header>
+    <!-- ============================================ -->
+    <!--                    Hero                      -->
+    <!-- ============================================ -->
+
+    <section id="hero-1061">
+      <div class="cs-container">
+        <div class="cs-content">
+          <h1 class="cs-title">Starcity Plumbing</h1>
+          <p class="cs-text">
+            We are the premier service providers for all plumbing services in
+            the Werribee area and surrounding.
+          </p>
+          <a href="" class="cs-button-solid">Enquire now</a>
+        </div>
+        <ul class="cs-card-group">
+          <li class="cs-item">
+            <picture class="cs-icon-wrapper">
+              <img
+                class="cs-icon"
+                loading="lazy"
+                decoding="async"
+                src="assets/plumber-truck.svg"
+                alt="car"
+                width="48"
+                height="48"
+              />
+            </picture>
+            <h3 class="cs-h3">Reliable Repairs</h3>
+            <p class="cs-item-text">
+              We pride ourselves on providing reliable repairs that you can
+              trust. Our experienced team is dedicated to diagnosing and fixing
+              plumbing issues quickly and efficiently, ensuring your home stays
+              comfortable and functional.
+            </p>
+          </li>
+          <li class="cs-item">
+            <picture class="cs-icon-wrapper">
+              <img
+                class="cs-icon"
+                loading="lazy"
+                decoding="async"
+                src="assets/plumber-man.svg"
+                alt="car"
+                width="48"
+                height="48"
+              />
+            </picture>
+            <h3 class="cs-h3">Experienced professionals</h3>
+            <p class="cs-item-text">
+              Over 10 years of experience, Star city has built a reputation for
+              excellence in plumbing services. Our decade-long tenure reflects
+              our commitment to quality and customer satisfaction.
+            </p>
+          </li>
+          <li class="cs-item">
+            <picture class="cs-icon-wrapper">
+              <img
+                class="cs-icon"
+                loading="lazy"
+                decoding="async"
+                src="assets/handyman.svg"
+                alt="car"
+                width="48"
+                height="48"
+              />
+            </picture>
+            <h3 class="cs-h3">Handymen</h3>
+            <p class="cs-item-text">
+              We provide reliable handyman services to tackle all your home
+              improvement needs. Whether it's repairs, installations, or
+              maintenance, our skilled team is dedicated to delivering quality
+              workmanship
+            </p>
+          </li>
+          <li class="cs-item">
+            <picture class="cs-icon-wrapper">
+              <img
+                class="cs-icon"
+                loading="lazy"
+                decoding="async"
+                src="assets/emergency-call.svg"
+                alt="car"
+                width="48"
+                height="48"
+              />
+            </picture>
+            <h3 class="cs-h3">24/7 Emergency support</h3>
+            <p class="cs-item-text">
+              24/7 plumbing services; ensuring you never face a plumbing
+              emergency alone. Our skilled team is always ready to respond,
+              providing prompt and reliable solutions whenever you need them.
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Background Image, there's a background image in the CSS for the parallax effect you'll need to change as well if you swap out our images -->
+      <picture class="cs-background">
+        <source
+          media="(max-width: 600px)"
+          srcset="./assets/homeBG1000px.webp"
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="./assets/homeBG2250px.webp"
+        />
+        <img
+          decoding="async"
+          src="./assets/homeBG2250px.webp"
+          alt="mechanic"
+          width="2250"
+          height="1500"
+          aria-hidden="true"
+        />
+      </picture>
+    </section>
+    <!-- ============================================ -->
+    <!--                   Services                   -->
+    <!-- ============================================ -->
+
+    <section id="services-1629">
+      <div class="cs-container">
+        <div class="cs-content">
+          <div class="cs-flex">
+            <span class="cs-topper">Our Services</span>
+            <h2 class="cs-title">Trust us to have it covered.</h2>
+          </div>
+          <p class="cs-text">
+            Our plumbing services are designed to address all your needs with
+            precision and care. Whether you're dealing with a leaky faucet, a
+            clogged drain, or a complete installation, our experienced team is
+            here to provide reliable solutions. We prioritize your comfort and
+            satisfaction, ensuring every job is done efficiently and to the
+            highest standards. Trust us to keep your plumbing running smoothly,
+            day or night.
+          </p>
+        </div>
+        <ul class="cs-card-group">
+          <li class="cs-item">
+            <picture class="cs-picture">
+              <img
+                class="cs-icon"
+                src="assets/pipe.svg"
+                loading="lazy"
+                decoding="async"
+                alt="icon"
+                width="32"
+                height="32"
+                aria-hidden="true"
+              />
+            </picture>
+            <!-- Text Grouped For Flexbox-->
+            <div class="cs-text-group">
+              <h3 class="cs-h3">Blocked drains</h3>
+              <p class="cs-item-text">
+                Our skilled team is here to tackle blocked drains with expertise
+                and precision. We prioritize quick and reliable solutions,
+                ensuring your plumbing flows freely and efficiently. Trust us to
+                resolve your drainage issues and keep your home comfortable.
+              </p>
+            </div>
+          </li>
+          <li class="cs-item">
+            <picture class="cs-picture">
+              <img
+                class="cs-icon"
+                src="assets/leaking-water.svg"
+                loading="lazy"
+                decoding="async"
+                alt="icon"
+                width="32"
+                height="32"
+                aria-hidden="true"
+              />
+            </picture>
+            <!-- Text Grouped For Flexbox-->
+            <div class="cs-text-group">
+              <h3 class="cs-h3">Leaks</h3>
+              <p class="cs-item-text">
+                We understand that every plumbing issue is unique, and we strive
+                to provide tailored solutions for leaking taps. Our commitment
+                is to ensure the satisfaction of our clients while enhancing the
+                overall quality of our services.
+              </p>
+            </div>
+          </li>
+          <li class="cs-item">
+            <picture class="cs-picture">
+              <img
+                class="cs-icon"
+                src="assets/gas-pipeline.svg"
+                loading="lazy"
+                decoding="async"
+                alt="icon"
+                width="32"
+                height="32"
+                aria-hidden="true"
+              />
+            </picture>
+            <!-- Text Grouped For Flexbox-->
+            <div class="cs-text-group">
+              <h3 class="cs-h3">Gas fitting</h3>
+              <p class="cs-item-text">
+                Our team is dedicated to providing expert gas fitting services
+                that prioritize safety and efficiency. From installations to
+                maintenance, we ensure every job meets the highest standards.
+                Trust us to deliver reliable solutions that keep your home safe
+                and comfortable.
+              </p>
+            </div>
+          </li>
+          <li class="cs-item">
+            <picture class="cs-picture">
+              <img
+                class="cs-icon"
+                src="assets/hot-water.svg"
+                loading="lazy"
+                decoding="async"
+                alt="icon"
+                width="32"
+                height="32"
+                aria-hidden="true"
+              />
+            </picture>
+            <!-- Text Grouped For Flexbox-->
+            <div class="cs-text-group">
+              <h3 class="cs-h3">Hot water system</h3>
+              <p class="cs-item-text">
+                Our experts specialize in hot water systems, delivering
+                comprehensive installation, repair, and maintenance services.
+                We’re committed to ensuring you have reliable access to hot
+                water when you need it most. Count on us for efficient solutions
+                that enhance your home’s comfort and energy efficiency.
+              </p>
+            </div>
+          </li>
+          <li class="cs-item">
+            <picture class="cs-picture">
+              <img
+                class="cs-icon"
+                src="assets/plumbing-inspection.svg"
+                loading="lazy"
+                decoding="async"
+                alt="icon"
+                width="32"
+                height="32"
+                aria-hidden="true"
+              />
+            </picture>
+            <!-- Text Grouped For Flexbox-->
+            <div class="cs-text-group">
+              <h3 class="cs-h3">General maintenance</h3>
+              <p class="cs-item-text">
+                Our plumbing maintenance services are designed to keep your
+                system running smoothly and prevent costly issues down the line.
+                We provide thorough inspections and timely repairs to ensure
+                optimal performance and peace of mind. Trust us to protect your
+                home with our proactive approach to plumbing care
+              </p>
+            </div>
+          </li>
+          <li class="cs-item">
+            <picture class="cs-picture">
+              <img
+                class="cs-icon"
+                src="assets/toilet.svg"
+                loading="lazy"
+                decoding="async"
+                alt="icon"
+                width="32"
+                height="32"
+                aria-hidden="true"
+              />
+            </picture>
+            <!-- Text Grouped For Flexbox-->
+            <div class="cs-text-group">
+              <h3 class="cs-h3">Toilet Installation and Repair</h3>
+              <p class="cs-item-text">
+                We are dedicated to providing top-notch toilet installation and
+                maintenance services. Our skilled team ensures each project is
+                completed with precision and care, enhancing your bathroom's
+                functionality and comfort.
+              </p>
+            </div>
+          </li>
+        </ul>
+        <a href="" class="cs-button-solid">Enquire now</a>
+      </div>
+    </section>
+    <!-- ============================================ -->
+    <!--                Why Choose Us                 -->
+    <!-- ============================================ -->
+
+    <section id="why-choose-223">
+      <div class="cs-container">
+        <div class="cs-content">
+          <span class="cs-topper">Why Choose Us</span>
+          <h2 class="cs-title">A Plumber You Can Trust in Melbourne</h2>
+          <p class="cs-text">
+            With 10 years of experience in the plumbing industry, our
+            Melbourne-based team is dedicated to providing high-quality service
+            you can trust. We are fully qualified and certified, ensuring that
+            every job is completed to the highest standards. Whether it's a
+            simple repair or a complex installation, we’re committed to
+            delivering reliable solutions tailored to your needs. Your
+            satisfaction is our top priority!
+          </p>
+          <!-- <a href="" class="cs-button-solid">More About Us</a> -->
+        </div>
+        <ul class="cs-card-group">
+          <li class="cs-item">
+            <img
+              class="cs-icon"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/pipes.svg"
+              alt="icon"
+              width="72"
+              height="72"
+            />
+            <h3 class="cs-h3">Trusted Plumbers</h3>
+          </li>
+          <li class="cs-item">
+            <img
+              class="cs-icon"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/pipes.svg"
+              alt="icon"
+              width="72"
+              height="72"
+            />
+            <h3 class="cs-h3">20+ Years Experience</h3>
+          </li>
+          <li class="cs-item">
+            <img
+              class="cs-icon"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/pipes.svg"
+              alt="icon"
+              width="72"
+              height="72"
+            />
+            <h3 class="cs-h3">Licensed & Insured</h3>
+          </li>
+          <li class="cs-item">
+            <img
+              class="cs-icon"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/pipes.svg"
+              alt="icon"
+              width="72"
+              height="72"
+            />
+            <h3 class="cs-h3">100% Satisfaction</h3>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- ============================================ -->
+    <!--                   Footer                     -->
+    <!-- ============================================ -->
+
+    <footer id="cs-footer-841">
+      <div class="cs-container">
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+          <a aria-label="go back to home" class="cs-logo" href="">
+            <img
+              class="cs-logo-img"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="assets/starcityLogo2.png"
+              alt="logo"
+              width="240"
+              height="32"
+            />
+          </a>
+          <p class="cs-text">Trust us to have it covered.</p>
+          <div class="cs-social">
+            <a
+              class="cs-social-link"
+              aria-label="visit facebook profile"
+              href=""
+            >
+              <img
+                class="cs-social-img"
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fface-white1.svg"
+                alt="facebook"
+                width="11"
+                height="11"
+              />
+            </a>
+            <a
+              class="cs-social-link"
+              aria-label="visit twitter profile"
+              href=""
+            >
+              <img
+                class="cs-social-img"
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Ftwit-white1.svg"
+                alt="twitter"
+                width="6"
+                height="11"
+              />
+            </a>
+            <a
+              class="cs-social-link"
+              aria-label="visit instagram profile"
+              href=""
+            >
+              <img
+                class="cs-social-img"
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Finsta-white1.svg"
+                alt="instagram"
+                width="11"
+                height="11"
+              />
+            </a>
+          </div>
+        </div>
+        <!-- Links -->
+        <div class="cs-ul-wrapper">
+          <span class="cs-header">Quick Links</span>
+          <ul class="cs-ul cs-ul-1">
+            <li class="cs-li">
+              <a class="cs-link" href="#">Home</a>
+            </li>
+            <!-- <li class="cs-li">
+              <a class="cs-link" href="">About</a>
+            </li> -->
+            <li class="cs-li">
+              <a class="cs-link" href="#services-1629">Services</a>
+            </li>
+            <!-- <li class="cs-li">
+              <a class="cs-link" href="">Donations</a>
+            </li> -->
+            <!-- <li class="cs-li">
+              <a class="cs-link" href="">Events</a>
+            </li> -->
+            <!-- <li class="cs-li">
+              <a class="cs-link" href="">Blog</a>
+            </li> -->
+            <li class="cs-li">
+              <a class="cs-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="cs-ul-wrapper">
+          <!-- Contact Info -->
+          <span class="cs-header">Contact Information</span>
+          <ul class="cs-ul">
+            <li class="cs-li">
+              <!--Make this link go to the google page-->
+              <a class="cs-link" href="" target="_blank">
+                <img
+                  class="cs-icon"
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fclock3-grey.svg"
+                  alt="clock icon"
+                  width="20"
+                  height="20"
+                />
+                M-F 8am – 5:30pm
+              </a>
+            </li>
+            <li class="cs-li">
+              <a class="cs-link" href="tel:555-497-1900">
+                <img
+                  class="cs-icon"
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fphone3-grey.svg"
+                  alt="phone icon"
+                  width="20"
+                  height="20"
+                />
+                0400000000
+              </a>
+            </li>
+            <li class="cs-li">
+              <a class="cs-link" href="mailto:office@email.com">
+                <img
+                  class="cs-icon"
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Femail3-grey.svg"
+                  alt="email icon"
+                  width="20"
+                  height="20"
+                />
+                starcityplumbing1ptyltd@gmail.com
+              </a>
+            </li>
+            <li class="cs-li">
+              <!--Make this link go to the google page-->
+              <a class="cs-link" href="" target="_blank">
+                <img
+                  class="cs-icon"
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fpin3-grey.svg"
+                  alt="pin icon"
+                  width="20"
+                  height="20"
+                />
+                Werribee, Vic 3030
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="cs-bottom">
+        <span class="cs-credit">
+          © Copyright 2024
+          <a href="" class="cs-credit-link" target="_blank">Siteline Studios</a>
+        </span>
+        <!-- <div class="cs-bottom-links">
+          <a href="" class="cs-bottom-link">Privacy Policy</a>
+          <a href="" class="cs-bottom-link">Terms Of Use</a>
+        </div> -->
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
